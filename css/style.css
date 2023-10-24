@@ -14,8 +14,8 @@
 
 
 :root {
-    --bg-color : #081b29;
-    --second-bg-color : #112e42;
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
 }
@@ -50,7 +50,7 @@ body {
     font-weight: 600;
 }
 
-.navbar a{
+.navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
@@ -76,13 +76,13 @@ section {
     padding: 10rem 9% 2rem;
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
     padding: 0 9%;
 }
 
-.home-content{ 
+.home-content {
     max-width: 60rem;
 }
 
@@ -104,13 +104,14 @@ section {
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
 }
+
 .home-content p {
     font-size: 1.6rem;
-    margin : 2rem 0 4rem;
+    margin: 2rem 0 4rem;
 }
 
 
-.btn-box{
+.btn-box {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -177,7 +178,7 @@ section {
 
 }
 
-.home-sci{
+.home-sci {
     position: absolute;
     bottom: 4rem;
     width: 170px;
@@ -244,7 +245,7 @@ span {
     padding-bottom: 6rem;
 }
 
-.about img{
+.about img {
     width: 100%;
     max-width: 35rem;
     border-radius: 1rem;
@@ -290,19 +291,19 @@ span {
 }
 
 .education-row .education-column {
-    flex : 1 1 40rem;
+    flex: 1 1 40rem;
 }
 
 .education-column .title {
     font-size: 2.5rem;
-    margin : 0 0 1.5rem 2rem;
+    margin: 0 0 1.5rem 2rem;
 }
 
 .education-column .education-box {
     border-left: .2rem solid var(--main-color);
 }
 
-.education-box .education-content{
+.education-box .education-content {
     position: relative;
     padding-left: 2rem;
 }
@@ -319,7 +320,7 @@ span {
 }
 
 .education-content .content {
-    position : relative;
+    position: relative;
     padding: 1.5rem;
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
@@ -343,14 +344,14 @@ span {
 }
 
 
-.education-content .content .year{
-   font-size : 1.5rem;
-   color : var(--main-color);
-   padding-bottom: .5rem;
+.education-content .content .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
 }
 
 .education-content .content .year i {
-    padding-right : .5rem;
+    padding-right: .5rem;
 }
 
 .education-content .content h3 {
@@ -373,7 +374,7 @@ span {
 .skills .skills-row {
     display: flex;
     flex-wrap: wrap;
-    gap : 5rem;
+    gap: 5rem;
 }
 
 .skills-row .skills-column {
@@ -382,22 +383,22 @@ span {
 
 .skills-column .title {
     font-size: 2.5rem;
-    margin : 0 0 1.5rem;
+    margin: 0 0 1.5rem;
 }
 
 
 .skills-box .skills-content {
     position: relative;
-    border : .2rem solid var(--main-color);
+    border: .2rem solid var(--main-color);
     border-radius: .6rem;
-    padding : .5rem 1.5rem;
+    padding: .5rem 1.5rem;
     z-index: 1;
     overflow: hidden;
 }
 
 
 .skills-box .skills-content::before {
-    content : '';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -414,7 +415,7 @@ span {
 
 
 .skills-content .progress {
-    padding : 1rem 0; 
+    padding: 1rem 0;
 }
 
 .skills-content .progress h3 {
@@ -425,7 +426,7 @@ span {
 }
 
 .skills-content .progress h3 span {
-    color : var(--text-color);
+    color: var(--text-color);
 }
 
 .skills-content .progress .bar {
@@ -474,4 +475,78 @@ span {
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width: 60%;
+}
+
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus {
+    width: 100%;
+}
+
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.contact form .btn-box.btns .btn {
+    cursor: pointer
 }
