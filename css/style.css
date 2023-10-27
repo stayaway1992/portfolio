@@ -545,7 +545,7 @@ span.search{
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 60%;
+    width: 35%;
 }
 
 
@@ -680,13 +680,21 @@ span.search{
 
 .project-content .content h3 {
     font-size: 2rem;
+    margin-left: 1rem;
 }
+
+.project-content .content li {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    margin-left : 1rem;
+}
+
 
 .project-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+    margin-left: 1rem;
 }
-
 
 
 
